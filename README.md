@@ -51,3 +51,9 @@ The primary goals of this project are to:
 
 - Demonstrate **real-world data engineering patterns**
 - Showcase **event-driven and stream-based architectures**
+
+## Data Model Overview
+
+This pipeline ingests NYC 311 requests data from NYC Open Data using the Socrata API. 
+Only a subset of fields required for analysis and deduplication of records are ingested.
+See [NYC 311 Schema Documentation](./docs/nyc311_schema.md) for details on which fields are ingested in this pipeline.
