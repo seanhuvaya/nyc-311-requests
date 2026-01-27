@@ -1,7 +1,7 @@
-from src.base_client import BaseAPIClient
+from src.resilient_client import ResilientAPIClient
 
 
-class NYC311_Client(BaseAPIClient):
+class NYC311_Client(ResilientAPIClient):
     def __init__(self, app_token: str):
         super().__init__(
             base_url="https://data.cityofnewyork.us/resource/",
@@ -25,7 +25,6 @@ class NYC311_Client(BaseAPIClient):
             "$order": "created_date ASC",
             "$limit": limit,
             "$offset": offset
-
         }
 
         return self.get("erm2-nwe9", params=params)
