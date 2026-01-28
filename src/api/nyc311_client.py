@@ -1,5 +1,5 @@
 from src.config import Config
-from src.resilient_client import ResilientAPIClient
+from src.api.resilient_client import ResilientAPIClient
 
 
 class NYC311_Client(ResilientAPIClient):

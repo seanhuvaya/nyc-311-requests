@@ -3,7 +3,7 @@ from typing import Optional, Dict
 from requests.adapters import HTTPAdapter
 from urllib3 import Retry
 
-from src.base_client import BaseAPIClient
+from src.api.base_client import BaseAPIClient
 from src.config import Config
 
 
